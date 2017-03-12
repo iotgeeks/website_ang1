@@ -1,0 +1,27 @@
+{
+	"testimonial": [{
+		"id": 1,
+		"image_url": "assets/img/testimonials1.png",
+		"name": "— arun krish",
+		"message": "“ this meetup is the best thing which has happened in my life....the knowledge and the exposure to the world of technology is the best thing....interaction with pros and seeing new startups come in every session is really aspiring to students like me....one thing i would like to recommend is to have frequent sessions and hands-on ......really a great job!!!! ”",
+		"create_date": "on Sep 30, 2015."
+	}, {
+		"id": 2,
+		"image_url": "assets/img/testimonials2.png",
+		"name": "Adipisicing elit",
+		"message": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.",
+		"create_date": "collapseOne1"
+	}, {
+		"id": 3,
+		"image_url": "assets/img/testimonials1.png",
+		"name": "Adipisicing elit",
+		"message": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.",
+		"create_date": "collapseOne1"
+	}, {
+		"id": 4,
+		"image_url": "assets/img/testimonials2.png",
+		"name": "Adipisicing elit",
+		"message": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.",
+		"create_date": "collapseOne1"
+	}]
+}

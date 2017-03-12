@@ -1,0 +1,34 @@
+{
+	"features": [{
+		"id": 1,
+		"class": "fa fa-bullhorn",
+		"title": "Fresh and Clean",
+		"message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+	}, {
+		"id": 2,
+		"class": "fa fa-comments",
+		"title": "Retina ready",
+		"message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+	}, {
+		"id": 3,
+		"class": "fa fa-leaf",
+		"title": "Fresh and Clean",
+		"message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+	}, {
+		"id": 4,
+		"class": "fa fa-cloud-download",
+		"title": "Fresh and Clean",
+		"message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+	}, {
+		"id": 5,
+		"class": "fa fa-cogs",
+		"title": "Fresh and Clean",
+		"message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+	}, {
+		"id": 6,
+		"class": "fa fa-heart",
+		"title": "Fresh and Clean",
+		"message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+	}
+	]
+}

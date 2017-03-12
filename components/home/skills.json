@@ -1,0 +1,28 @@
+{
+	"skills": [{
+		"id": 1,
+		"technology": "CSS",
+		"percentage": "80%",
+		"color_class": "color1"
+	}, {
+		"id": 2,
+		"technology": "HTML",
+		"percentage": "100%",
+		"color_class": "color2"
+	}, {
+		"id": 3,
+		"technology": "Python",
+		"percentage": "60%",
+		"color_class": "color3"
+	}, {
+		"id": 4,
+		"technology": "C",
+		"percentage": "90%",
+		"color_class": "color4"
+	}, {
+		"id": 5,
+		"technology": "C++",
+		"percentage": "70%",
+		"color_class": "color2"
+	}]
+}

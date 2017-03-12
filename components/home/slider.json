@@ -1,0 +1,24 @@
+{
+	"slides": [{
+		"id": 1,
+		"title": "",
+		"sub_title": "",
+		"img_back_url": "assets/img/slider/bg1.jpg",
+		"img_front_url": "",
+		"url": "#"
+	}, {
+		"id": 2,
+		"title": "",
+		"sub_title": "",
+		"img_back_url": "assets/img/slider/bg2.jpg",
+		"img_front_url": "",
+		"url": "#"
+	}, {
+		"id": 3,
+		"title": "",
+		"sub_title": "",
+		"img_back_url": "assets/img/slider/bg3.jpg",
+		"img_front_url": "",
+		"url": "#"
+	}]
+}

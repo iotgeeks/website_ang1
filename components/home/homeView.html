@@ -1,0 +1,258 @@
+<div class="homepage">
+<div ng-include="'../shared/header.html'"></div>
+<br>
+<section id="main-slider" class="no-margin">
+        <div class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+
+                <div class="item" ng-repeat="slider in vm.sliders track by slider.id" style="background-image: url('{{slider.img_back_url}}')" ng-class="{'active': slider.id == 1}">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <h1 class="animation animated-item-1">{{slider.title}}</h1>
+                                    <h2 class="animation animated-item-2">{{slider.sub_title}}</h2>
+                                    <!-- <a class="btn-slide animation animated-item-3" href="{{slide.url}}">Read More</a> -->
+                                </div>
+                            </div>
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="slider-img">
+                                    <img ng-src="{{slider.img_front_url}}" class="img-responsive">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!--/.item-->
+
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+            <i class="fa fa-chevron-left"></i>
+        </a>
+        <a class="next hidden-xs" href="#main-slider" data-slide="next">
+            <i class="fa fa-chevron-right"></i>
+        </a>
+    </section><!--/#main-slider-->
+    <br>
+    <section id="feature" >
+        <div class="container">
+           <div class="center wow fadeInDown">
+                <h2>Features</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+
+            <div class="row">
+                <div class="features">
+
+                    <div ng-repeat="feature in vm.features track by feature.id"class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="{{feature.class}}"></i>
+                            <h2>{{feature.title}}</h2>
+                            <h3>{{feature.message}}</h3>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                </div><!--/.services-->
+            </div><!--/.row-->    
+        </div><!--/.container-->
+    </section><!--/#feature-->
+    <br>
+    <section id="recent-works">
+        <div class="container">
+            <div class="center wow fadeInDown">
+                <h2>Recent Works</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-3" ng-repeat="recentWork in vm.recentWorks track by recentWork.id">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" ng-src="{{recentWork.url}}" alt="">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+                                <h3><a href="#">{{recentWork.title}}</a> </h3>
+                                <p>{{recentWork.message}}</p>
+                                <a class="preview" ng-href="{{recentWork.url}}" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                  
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#recent-works-->
+    <br>
+    <section id="services" class="service-item">
+       <div class="container">
+            <div class="center wow fadeInDown">
+                <h2>Our Service</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-4" ng-repeat="service in vm.services track by service.id">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="{{service.img_url}}">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">{{service.title}}</h3>
+                            <p>{{service.message}}</p>
+                        </div>
+                    </div>
+                </div>            
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#services-->
+    <br>
+    <section id="middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 wow fadeInDown">
+                    <div class="skill">
+                        <h2>Our Skills</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                        <div ng-repeat="skill in vm.skills track by skill.id" class="progress-wrap" >
+                            <h3>{{skill.technology}}</h3>
+                            <div class="progress">
+                              <div class="progress-bar {{skill.color_class}}" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: {{skill.percentage}}">
+                                <span class="bar-width">{{skill.percentage}}</span>
+                              </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--/.col-sm-6-->
+
+                <div class="col-sm-6 wow fadeInDown">
+                    <div class="accordion">
+                        <h2>Why People like us?</h2>
+                        <div class="panel-group" id="accordion1">
+                          <div ng-repeat="like in vm.likeUs track by like.id" class="panel panel-default">
+                            <div class="panel-heading" ng-class="{'active': like.id == vm.currentActiveLike}">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" ng-click="vm.changeActiveLike(like.id)">
+                                  {{like.like_us_title}}
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div class="panel-collapse collapse" ng-class="{'in': like.id == vm.currentActiveLike}">
+                              <div class="panel-body">
+                                <h4>{{like.title}}</h4>
+                                {{like.message}}
+                              </div>
+                            </div>
+                          </div>
+                        </div><!--/#accordion1-->
+                    </div>
+                </div>
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#middle-->
+    <br>
+    <section id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 wow fadeInDown">
+                   <div class="tab-wrap"> 
+                        <div class="media">
+                            <div class="parrent pull-left">
+                                <ul class="nav nav-tabs nav-stacked">
+                                    <li ng-repeat="response in vm.response track by response.id" ng-class="{'active': response.id == vm.responseActive}" ng-click="vm.changeResponseActive(response.id)"><a data-toggle="tab" class="analistic-01">{{response.title}}</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="parrent media-body">
+                            <!-- <div class="tab-pane fade active in" id="tab2">
+                                        <div class="media">
+                                           <div class="pull-left">
+                                                <img class="img-responsive" src="images/tab1.png">
+                                            </div>
+                                            <div class="media-body">
+                                                 <h2>Adipisicing elit</h2>
+                                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use.
+                                                 </p>
+                                            </div>
+                                        </div>
+                                     </div> -->
+                                <div class="tab-content">
+
+                                    <div ng-repeat="response in vm.response track by response.id" class="tab-pane fade" ng-class="{'active': response.id == vm.responseActive, 'in': response.id == vm.responseActive }">
+                                        <p>{{response.message}}</p>
+                                     </div>
+                                     
+                                </div> <!--/.tab-content-->  
+                            </div> <!--/.media-body--> 
+                        </div> <!--/.media-->     
+                    </div><!--/.tab-wrap-->               
+                </div><!--/.col-sm-6-->
+
+                <div class="col-xs-12 col-sm-4 wow fadeInDown">
+                    <div class="testimonial">
+                        <h2>Testimonials</h2>
+                        <marquee direction="up" height="200" SCROLLDELAY=200>
+                             <div class="media testimonial-inner" ng-repeat="testimonial in vm.testimonial track by testimonial.id">
+                                <div class="pull-left">
+                                    <img class="img-responsive img-circle" src="{{testimonial.image_url}}">
+                                </div>
+                                <div class="media-body">
+                                    <p>{{testimonial.message}}</p>
+                                    <span><strong>-{{testimonial.name}}</strong> {{testimonial.create_date}}</span>
+                                </div>
+                            </div>
+                        </marquee>
+                    </div>
+                </div>
+
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#content-->
+    <br>
+    <section id="partner">
+        <div class="container">
+            <div class="center wow fadeInDown">
+                <h2>Our Partners</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>    
+
+            <div class="partners">
+                <ul>
+                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="assets/img/partners/partner1.png"></a></li>
+                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="assets/img/partners/partner2.png"></a></li>
+                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="assets/img/partners/partner3.png"></a></li>
+                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="assets/img/partners/partner4.png"></a></li>
+                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="assets/img/partners/partner5.png"></a></li>
+                </ul>
+            </div>        
+        </div><!--/.container-->
+    </section><!--/#partner-->
+    <br>
+    <section id="conatcat-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="pull-left">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="media-body">
+                            <h2>Have a question or need a custom quote?</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation +0123 456 70 80</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/.container-->    
+    </section><!--/#conatcat-info-->
+    <br>
+<div ng-include="'../shared/footer.html'"></div>
+</div>
