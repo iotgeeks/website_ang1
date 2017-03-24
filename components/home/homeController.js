@@ -23,7 +23,6 @@
         HomeSerivce.getSliders().then(function(response) {
             if(response.status === 200) {
                 vm.sliders = response.data.slides;
-                console.log(vm.sliders);
             }
         }, function(errorResponse) {
             //error response
