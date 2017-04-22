@@ -1,7 +1,26 @@
 <div class="homepage">
 <div ng-include="'../shared/header.html'"></div>
-<br>
-    <h1 style="color: black;">Welcome to service</h1>
-<br>
+ <section id="services" class="service-item">
+       <div class="container">
+            <div class="center wow fadeInDown">
+                <h2>Our Service</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-4" ng-repeat="service in vm.services track by service.id">
+                    <div class="media services-wrap wow fadeInDown">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="{{service.img_url}}">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">{{service.title}}</h3>
+                            <p>{{service.message}}</p>
+                        </div>
+                    </div>
+                </div>            
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#services-->
 <div ng-include="'../shared/footer.html'"></div>
 </div>
