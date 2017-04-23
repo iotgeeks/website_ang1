@@ -86,6 +86,7 @@
 
         })
 
+
         function changeActiveLike(likeId) {           
             vm.currentActiveLike = likeId;
         }

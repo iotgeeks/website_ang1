@@ -5,6 +5,8 @@
         .module('app.routor', [
             'ngRoute'
         ]).config(['$routeProvider', function($routeProvider){
+            //console.log(LightboxProvider);
+
             $routeProvider.
 
             when('/home', {

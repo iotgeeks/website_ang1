@@ -2527,7 +2527,7 @@ shortcodes page css
 
 
 /* custom design */
-
+/*
 h1 {
   position: relative;
   text-align: center;
@@ -2552,11 +2552,11 @@ h1:before {
 }
 h1:before {
   left: 0;
-}
+}*/
 
 
 
-.card {
+/*.card {
     padding-top: 20px;
     margin: 10px 0 20px 0;
     background-color: rgba(214, 224, 226, 0.2);
@@ -2915,3 +2915,4 @@ ul.social-network li {
 #IdFooter a {
  background-color: #D3D3D3;   
 }
+*/
